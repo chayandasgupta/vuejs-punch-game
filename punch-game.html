@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Vuejs</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+	<div id="myApp">
+		<!-- Bag Image -->
+		<div class="bag-img" v-bind:class="{blast:ended}"></div>
+
+		<!-- Bag Health -->
+		<div class="bag-health">
+			<div class="bag-health-inner" v-bind:style="{width: health + '%'}"></div>
+		</div>
+
+		<!-- Bag Control -->
+		<div class="bag-control">
+			<button @click='punch' v-show='!ended'>Punch</button>
+			<button @click='restart'>Reset</button>
+		</div>
+	</div>
+
+	<script src="assets/main.js"></script>
+</body>
