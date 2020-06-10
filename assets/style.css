@@ -1,0 +1,17 @@
+
+span{
+	background:red;
+	padding: 5px;
+	color: #fff;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.available span { 
+	background: green;
+}
+
+.nearby span:after{
+	content:"Nearby";
+	margin-left: 10px;
+}
